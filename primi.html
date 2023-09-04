@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
+    <title>Learn with Mama!</title>
+</head>
+<body>
+
+    <section class="section centro transition-fade">
+        
+        <div class="has-text-centered">
+            <figure class="image mamalogo centro pulse" style="margin-bottom: 1em;">
+                <a id="id_logo" href="index.html"><img src="./img/logo.png" alt="Placeholder image"></a>
+            </figure>
+        </div>
+
+        <div class="has-text-centered">
+            <div id="random-quote-container" class="nes-balloon" style="border-image-repeat: stretch;">
+                <p id="random-quote">Che cosa cuciniamo oggi?</p>
+            </div>
+            <figure id="random-image-container" class="image centro zoom-in-out-box" style="width: 7em;">
+                <img src="./img/smile.png" alt="Placeholder image" id="random-image">
+            </figure>
+        </div>
+
+        <div class="has-text-centered column is-offset-4-desktop is-4-desktop">
+
+              <div class="box" onclick="popupPastapomodoro()">
+                <article class="media">
+                  <div class="media-left">
+                    <figure>
+                      <img src="./img/cibi/pastapomodoro.png" class="food" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Pasta</strong> <br><small>al pomodoro</small>
+                      </p>
+
+                      <i class="nes-icon star is-half"></i>
+                      <i class="nes-icon star is-transparent"></i>
+                      <i class="nes-icon star is-transparent"></i>
+                      <i class="nes-icon star is-transparent"></i>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+        </div>
+
+    </section>
+
+<script>
+
+    // Lista delle immagini disponibili nella cartella "img"
+    const images = [
+        "laugh.png",
+        "laugh.png",
+        "smile.png",
+        "surprised.png",
+        "surprised.png"
+    ];
+
+    const phrases = [
+        "Che cosa cuciniamo oggi?",
+        "Che cosa cuciniamo oggi?",
+        "Che cosa cuciniamo oggi?",
+        "Che cosa cuciniamo oggi?",
+        "Che cosa cuciniamo oggi?",
+        "Che cosa cuciniamo oggi?",
+        "Che cosa cuciniamo oggi?",
+        "Quella potrebbe essere Ibiza 👉",
+        "SEBASTIANOOO 🤙",
+        "Questa non è IBIZA 🗣🗣🗣‼‼‼",
+        "Tutto azzurrino 💙",
+        "Molla subito",
+        "Sono stato violento?",
+        "Abbassa quel braccio destro",
+        "Daaaeeeeebyyyyy"
+    ];
+
+    // Funzione per ottenere un numero casuale tra 0 e il numero di immagini disponibili
+    function getRandomIndex() {
+        return Math.floor(Math.random() * images.length);
+    }
+
+    // Funzione per cambiare l'immagine random
+    function changeRandomImage() {
+        const randomImageElement = document.getElementById('random-image');
+        const randomIndex = getRandomIndex();
+
+        // Ottieni il nome dell'immagine corrispondente al numero casuale
+        const randomImageName = images[randomIndex];
+
+        // Costruisci l'URL completo dell'immagine
+        const imageUrl = `./img/${randomImageName}`;
+
+        // Aggiorna l'attributo src dell'elemento immagine
+        randomImageElement.src = imageUrl;
+    }
+
+    function changeRandomPhrase() {
+        const randomImageElement = document.getElementById('random-quote');
+        const randomIndex = Math.floor(Math.random() * phrases.length);
+
+        const randomPhrase = phrases[randomIndex];
+
+        randomImageElement.innerText = randomPhrase;
+        
+    }
+
+    document.addEventListener("DOMContentLoaded", changeRandomImage);
+    document.addEventListener("DOMContentLoaded", changeRandomPhrase)
+
+</script>
+
+    
+<script src="./js/riceps.js"></script>
+    
+
+</body>
+</html>

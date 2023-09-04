@@ -124,4 +124,10 @@ html.is-changing .transition-fade {
 
   .swalfont {
     font-family: 'Roboto', sans-serif; /* Specifica il tuo font personalizzato qui */
+ }
+
+ a, a:hover, a:active, a:visited { 
+  color: white !important;
+  text-decoration: none !important; 
 }
+

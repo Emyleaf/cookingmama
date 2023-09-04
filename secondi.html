@@ -22,8 +22,6 @@
             </figure>
         </div>
 
-        <main id="swup" class="transition-fade">
-
         <div class="has-text-centered">
             <div id="random-quote-container" class="nes-balloon" style="border-image-repeat: stretch;">
                 <p id="random-quote">Che cosa cuciniamo oggi?</p>
@@ -39,7 +37,7 @@
                 <article class="media">
                   <div class="media-left">
                     <figure>
-                      <img src="./img/cibi/hamburger.png" class="food" alt="Image">
+                      <img src="./img/cibi/hamburger2.png" class="food" alt="Image">
                     </figure>
                   </div>
                   <div class="media-content">
@@ -57,31 +55,7 @@
                 </article>
               </div>
 
-              <div class="box">
-                <article class="media">
-                  <div class="media-left">
-                    <figure>
-                      <img src="./img/cibi/pastapomodoro.png" class="food" alt="Image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Pasta</strong> <br><small>al pomodoro</small>
-                      </p>
-
-                      <i class="nes-icon star is-half"></i>
-                      <i class="nes-icon star is-transparent"></i>
-                      <i class="nes-icon star is-transparent"></i>
-                      <i class="nes-icon star is-transparent"></i>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
         </div>
-
-    </main>
 
     </section>
 
@@ -129,7 +103,7 @@
 
     function changeRandomPhrase() {
         const randomImageElement = document.getElementById('random-quote');
-        const randomIndex = getRandomIndex();
+        const randomIndex = Math.floor(Math.random() * phrases.length);
 
         const randomPhrase = phrases[randomIndex];
 
