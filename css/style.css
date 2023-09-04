@@ -1,0 +1,127 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background: url("../img/sfondo.png");
+}
+
+html.is-changing .transition-fade {
+    transition: opacity 0.25s;
+    opacity: 1;
+  }
+  /* Define the styles for the unloaded pages */
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
+
+.centro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mamalogo{
+    width: 20em;
+    image-rendering: pixelated;
+}
+
+.pulse {
+    animation: pulse 3s infinite;
+    margin: 0 auto;
+    display: table;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+  }
+      
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+    }
+  }
+      
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .tilt-shaking {
+    animation: tilt-shaking 3s infinite;
+    margin: 0 auto;
+    display: table;
+    animation-direction: alternate;
+    -webkit-animation-name: tilt-shaking;
+    animation-name: tilt-shaking;
+  }
+
+  @keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+
+  @-webkit-keyframes tilt-shaking {
+    0% { -webkit-transform: rotate(0deg); }
+    25% { -webkit-transform: rotate(3deg); }
+    50% { -webkit-transform: rotate(0eg); }
+    75% { -webkit-transform: rotate(-3deg); }
+    100% { -webkit-transform: rotate(0deg); }
+  }
+
+  .zoom-in-out-box {
+    animation: zoom-in-zoom-out 0.8s ease-in;
+  }
+  
+  @-webkit-keyframes zoom-in-zoom-out {
+    0% {
+      -webkit-transform: scale(0.2, 0.2);
+    }
+    50% {
+      -webkit-transform: scale(1.3, 1.3);
+    }
+    100% {
+      -webkit-transform: scale(1, 1);
+    }
+  }
+
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(0.2, 0.2);
+    }
+    50% {
+      transform: scale(1.3, 1.3);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  .food{
+    object-fit: cover;
+    height: 64px;
+    width: 64px;
+    border-radius: 10%;
+  }
+
+  .swalfont {
+    font-family: 'Roboto', sans-serif; /* Specifica il tuo font personalizzato qui */
+}
