@@ -6,6 +6,17 @@ html, body {
     margin: 0;
     height: 100%;
     background: url("../img/sfondo.png");
+
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
 }
 
 html.is-changing .transition-fade {
@@ -131,3 +142,33 @@ html.is-changing .transition-fade {
   text-decoration: none !important; 
 }
 
+/* Stile del balloon */
+.speech-bubble {
+  /* Rimuovi width e height per consentire al balloon di adattarsi dinamicamente alla larghezza del testo */
+  position: absolute;
+  margin: 1em auto;
+  padding: 0.8em;
+  border-radius: .25em;
+  transform: rotate(-4deg) rotateY(15deg);
+  background: #629bdd;
+  font: 1.4em Century Gothic, Verdana, sans-serif;
+  text-align: center;
+  white-space: pre-wrap; /* Utilizza 'pre-wrap' per gestire il testo a capo */
+  max-width: 90%; /* Limita la larghezza massima del balloon */
+  word-wrap: break-word; /* Consentire la spezzatura delle parole lunghe */
+
+}
+
+.speech-bubble:before, .speech-bubble:after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+}
+
+.speech-bubble:after {
+  top: 0; right: 0; bottom: 0; left: 0;
+  border-radius: inherit;
+  transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+  background: #f4fbfe;
+  
+}

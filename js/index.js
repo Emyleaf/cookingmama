@@ -16,7 +16,12 @@
         "Molla subito",
         "Sono stato violento?",
         "Abbassa quel braccio destro",
-        "Daaaeeeeebyyyyy"
+        "Daaaeeeeebyyyyy",
+        "Per favore non piangereeeee",
+        "Non ci rimanere maaaaleeee",
+        "Seee teleefonaaandooo ioooo",
+        "A volte sono le voci che parlano",
+        "SONO SOTTO LA PIOGGIAAAA"
     ];
 
     // Funzione per ottenere un numero casuale tra 0 e il numero di immagini disponibili
