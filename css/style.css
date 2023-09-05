@@ -172,3 +172,18 @@ html.is-changing .transition-fade {
   background: #f4fbfe;
   
 }
+
+/* Nascondi l'area delle informazioni di stato in modalità landscape e portrait */
+@media screen and (orientation: portrait) {
+  body {
+      height: calc(100vh - constant(safe-area-inset-top));
+      height: calc(100vh - env(safe-area-inset-top));
+  }
+}
+
+@media screen and (orientation: landscape) {
+  body {
+      height: calc(100vh - constant(safe-area-inset-top));
+      height: calc(100vh - env(safe-area-inset-top));
+  }
+}
