@@ -35,7 +35,7 @@ function popupCheesecake(){
 function popupCoff(){
     Swal.fire({
         title: '<p class="swalfont">Caffè</p>',
-        html: "<img src='./img/icon.jpeg'></img><br><br><p class='swalfont'><strong>PREPARAZIONE</strong><br>Inserire acqua potabile nella parte sottostante della moka, SENZA superare la valvola.<br><br> Inserire il filtrino e mettere il caffè senza pressarlo, chiudere il tutto.<br><br>Mettere su un fornello a fiamma bassa e nel giro di pochi minuti avrai il tuo caffè!<br><br><strong>Per la pulizia:</strong> rimuovere tutto il caffè sotto acqua calda corrente. Usare solo spugnette, SENZA sapone per piatti!</p>",
+        html: "<img src='./img/icon.jpeg'></img><br><br><p class='swalfont'><strong>PREPARAZIONE</strong><br>Inserire acqua potabile nella parte sottostante della moka, SENZA superare la valvola.<br><br> Inserire il filtrino e mettere il caffè senza pressarlo, chiudere il tutto.<br><br>Mettere su un fornello a fiamma bassa e nel giro di pochi minuti avrai il tuo caffè!<br><br><strong>Per la pulizia:</strong> rimuovere tutto il caffè sotto acqua calda corrente. Usare solo spugnette, SENZA sapone per piatti!<br><br><iframe width='300' height='250' src='https://www.youtube.com/embed/yTMW9QWSvAE?si=cnmlA55oj372FWxe&amp;controls=0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe></p>",
         confirmButtonText: 'Capito!',
         customClass: {
             content: 'swalfont', // Classe CSS personalizzata per il contenuto dell'alert
