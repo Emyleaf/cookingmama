@@ -21,7 +21,8 @@
         "Non ci rimanere maaaaleeee",
         "Seee teleefonaaandooo ioooo",
         "A volte sono le voci che parlano",
-        "SONO SOTTO LA PIOGGIAAAA"
+        "SONO SOTTO LA PIOGGIAAAA",
+        "Destinazione maaaaareee 🌊"
     ];
 
     // Funzione per ottenere un numero casuale tra 0 e il numero di immagini disponibili

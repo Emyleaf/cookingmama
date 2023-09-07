@@ -10,7 +10,8 @@ const randomPhrases = [
     "Seee teleefonaaandooo ioooo",
     "Riscalda sempre prima la padella!",
     "Rimuovi i residui il prima possibile!",
-    "SONO SOTTO LA PIOGGIAAAA"
+    "SONO SOTTO LA PIOGGIAAAA",
+    "(nintendo non farmi il culo)"
 ];
 
 // Funzione per ottenere una frase casuale dall'array
