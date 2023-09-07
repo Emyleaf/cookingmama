@@ -57,6 +57,17 @@ function popupFrittata(){
     });
 }
 
+function popupTonkatsu(){
+    Swal.fire({
+        title: '<p class="swalfont">Tonkatsu 🥩</p>',
+        html: "<img src='./img/icon.jpeg'></img><br><br><strong>INGREDIENTI</strong><br><i>porzioni per 2 persone</i><br>4 lonze di maiale (280g)<br>2 uova<br>240g farina tipo 0<br>240g farina panko<br>Sale e pepe per marinare<br>Olio per friggere (semi girasole)<br><br><strong>PREPARAZIONE</strong><br>In corso...",
+        confirmButtonText: 'Capito!',
+        customClass: {
+            content: 'swalfont', // Classe CSS personalizzata per il contenuto dell'alert
+        },
+    });
+}
+
 //dolci
 
 function popupCheesecake(){
