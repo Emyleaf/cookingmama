@@ -49,7 +49,7 @@ function popupHamburger(){
 function popupFrittata(){
     Swal.fire({
         title: '<p class="swalfont">Frittata wurstel e formaggio 🍳</p>',
-        html: "<img src='./img/icon.jpeg'></img><br><br><strong>PREPARAZIONE</strong><br>Riscaldare una padella con un filo d'olio.<br><br>In una ciotola sbattere l'uovo unendo il parmigiano (50gxuovo) e un pizzico di sale.<br><br>Versare il composto nella padella calda e compattare la frittata, cuocere da entrambi i lati a fiamma bassa fino a doratura.",
+        html: "<img src='./img/icon.jpeg'></img><br><br><strong>PREPARAZIONE</strong><br>Riscaldare una padella con un filo d'olio.<br><br>In una ciotola sbattere l'uovo unendo il parmigiano (50gxuovo) e un pizzico di sale.<br><br>Versare il composto nella padella calda e compattare la frittata, cuocere da entrambi i lati a fiamma bassa fino a doratura. Aggiungere i wurstel riscaldati nel microonde quando la frittata è ancora liquida!",
         confirmButtonText: 'Capito!',
         customClass: {
             content: 'swalfont', // Classe CSS personalizzata per il contenuto dell'alert
@@ -95,8 +95,8 @@ function popupTortaKinder(){
 
 function popupPancake(){
     Swal.fire({
-        title: '<p class="swalfont">Pancake 🥞</p>',
-        html: '<img src="./img/icon.jpeg"></img><br><br><strong>INGREDIENTI</strong><br><i>per 2-3 pancake, raddoppiare le dosi se ne vuoi di più! Frusta elettrica </strong>consigliata alla grande</strong></i><br>1 uovo<br>60 g di zucchero<br>85 g di yogurt<br>45 ml di olio di semi di girasole<br>100 g di farina 00<br>5 g di lievito per dolci<br>burro per ungere padella<br><br><strong>PREPARAZIONE</strong><br>Rompere le uova e aggiungere lo zucchero, quindi mescolare. Aggiungere lo yogurt, olio di semi e mescolare. Aggiungere la farina poco a poco mentre si mescola. Aggiungere bustina di lievito e mescolare.<br><br>Una volta ottenuto un composto bello cremoso, scaldare la padella imburrandola leggermente.<br>Versare con un mestolo il composto e formare il pancake, lasciarlo cuocere per 2-3min. Girarlo e lasciarlo cuocere per altri 2min.<br><br>Decorare a piacimento!<br><br>',
+        title: '<p class="swalfont">Dorayaki 🥞</p>',
+        html: '<img src="./img/icon.jpeg"></img><br><br><strong>INGREDIENTI</strong><br><i>per 3 dorayaki, raddoppiare le dosi se ne vuoi di più! Frusta </strong>per mescolareee!</strong></i><br>1 uovo<br>75 g di zucchero (a velo pref.)<br>olio di semi di girasole per ungere<br>120 g di farina 00<br>1,5 g di lievito per dolci<br>cucchiaino miele<br>90g acqua<br><br><strong>PREPARAZIONE</strong><br>Metti la farina in una ciotola, metti zucchero a velo, metti il lievito, rompi e metti uovo, metti il miele e metti infine acqua.<br>Amalga piano piano inizialmente e poi veloce.<br><br>Una volta ottenuto un composto bello cremoso, scaldare la padella con un poco di olio di semi.<br>Versare con un mestolo il composto e formare il dorayaki, lasciarlo cuocere per 2-3min. Quando si saranno formate le bollicine sopra il composto (sotto sarà marrone), girarlo e lasciarlo cuocere per altri 2min.<br><br>Decorare a piacimento!<br><br>',
         confirmButtonText: 'Capito!',
         customClass: {
             content: 'swalfont', // Classe CSS personalizzata per il contenuto dell'alert
